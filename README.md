@@ -1,1 +1,1 @@
-# Style-Transfer
+# Fast Style Transfer

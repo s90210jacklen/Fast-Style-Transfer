@@ -15,7 +15,7 @@
 
 - 內容損失(Content Loss)
 
-![Content_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/content_loss.png)
+![Content_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Content_loss.png)
 
 
 

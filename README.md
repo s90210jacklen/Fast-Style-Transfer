@@ -21,7 +21,7 @@
 
 - 風格損失(Style Loss)
 
-![style_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/style_loss.png)
+![Style_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Style%20Loss.png)
 # Tricks
 
 

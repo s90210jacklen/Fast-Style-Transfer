@@ -14,9 +14,9 @@
 與原始的Style Transfer的概念相同，利用損失網路(Loss Network)來定義內容損失(Content Loss)與風格損失(Style Loss)
 
 - 內容損失(Content Loss)
-![content_loss]https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/content_loss.png
+![content_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/content_loss.png)
 - 風格損失(Style Loss)
-![style_loss]https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/style_loss.png
+![style_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/style_loss.png)
 # Tricks
 
 

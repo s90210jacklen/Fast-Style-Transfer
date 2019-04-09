@@ -12,9 +12,7 @@
 
 ## Detail
 我們希望
-\begin{align}
-$\hat{y}$
-\end{align}
+\begin{align} $\hat{a}$ \end{align}
 # Tricks
 
 

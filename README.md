@@ -11,7 +11,7 @@
 - **執行階段** : 輸入一張圖片，經由影像生成網路(Image Tranform Net)生成出一張風格轉移過後的圖片
 
 ## Detail
-我們希望 \hat{y}
+我們希望 \^{y}
 
 # Tricks
 

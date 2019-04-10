@@ -97,5 +97,5 @@ eg: With Tensorflow as backend
 - [1] [《Perceptual Losses for Real-Time Style Transfer and Super-Resolution》](https://arxiv.org/pdf/1603.08155v1.pdf)
 - [2] [《A Neural Algorithm of Artistic Style》
 ](https://arxiv.org/pdf/1508.06576v2.pdf)
-- [3] [Deconvolution and Checkerboard Artifacts](https://distill.pub/2016/deconv-checkerboard/)
+- [3]  [Deconvolution and Checkerboard Artifacts](https://distill.pub/2016/deconv-checkerboard/)
 - [4] [《Instance Normalization: The Missing Ingredient for Fast Stylization》](https://arxiv.org/pdf/1607.08022.pdf)

@@ -18,7 +18,7 @@
 - **內容損失(Content Loss)**</br>
 使用VGG-16的relu3_3層輸出的特徵
 
-
+![Total loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Total%20loss.png)
 
 
 - **風格損失(Style Loss)**</br>

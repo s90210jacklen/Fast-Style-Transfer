@@ -27,7 +27,7 @@
 ![Total loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/total_loss.png)
 
 # Tricks
-- 不採取常見的轉置卷積(Transposed Convolution)的方式，而是先放大再做卷積，這樣可以消除棋盤狀的noise
+- 不採取常見的轉置卷積(Transposed Convolution)的方式，而是先放大再做卷積，這樣可以消除棋盤狀的noise</br>
 由[此篇文章](https://distill.pub/2016/deconv-checkerboard/)所提出
 ```python
 with tf.variable_scope('deconv1'):

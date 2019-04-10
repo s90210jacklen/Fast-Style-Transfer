@@ -28,7 +28,7 @@
 
 # Tricks
 - 不採取常見的轉置卷積(Transposed Convolution)的方式，而是先放大再做卷積，這樣可以消除棋盤狀的noise</br>
-由[此篇文章](https://distill.pub/2016/deconv-checkerboard/)所提出
+由[此篇文章](https://distill.pub/2016/deconv-checkerboard/)[3]所提出
 ```python
 def resize_conv2d(x, input_depth, output_depth, ksize, strides, traning):
     # 先放大
@@ -44,7 +44,7 @@ def resize_conv2d(x, input_depth, output_depth, ksize, strides, traning):
         return conv2d(x_resized, input_depth, output_depth, ksize, strides)
 ```
 - 使用Instance Norm取代常見的Batch Norm</br>
-由[《Instance Normalization: The Missing Ingredient for Fast Stylization》](https://arxiv.org/abs/1607.08022)所提出
+由[《Instance Normalization: The Missing Ingredient for Fast Stylization》](https://arxiv.org/abs/1607.08022)[4]所提出
 ```python
 def instance_norm(x):
     epsilon = 1e-9

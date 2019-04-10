@@ -24,7 +24,7 @@
 使用VGG-16的relu1_2，relu2-2，relu3_3，relu4_3共四個層的特徵
 
 -- 同樣的利用內容損失與風格損失組合成一個總損失(Toatal Loss)，並利用總損失來訓練影像生成網路(Image Tranform Net)
-![Total loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Total%20loss.png)
+![Total loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/total_loss.png)
 
 # Tricks
 

@@ -43,7 +43,8 @@ def resize_conv2d(x, input_depth, output_depth, ksize, strides, traning):
      # 再卷積   
         return conv2d(x_resized, input_depth, output_depth, ksize, strides)
 ```
--使用Instance Norm取代常見的Batch Norm 由[《Instance Normalization: The Missing Ingredient for Fast Stylization》](https://arxiv.org/abs/1607.08022)所提出
+- 使用Instance Norm取代常見的Batch Norm</br>
+由[《Instance Normalization: The Missing Ingredient for Fast Stylization》](https://arxiv.org/abs/1607.08022)所提出
 ```python
 def instance_norm(x):
     epsilon = 1e-9
@@ -51,7 +52,7 @@ def instance_norm(x):
     
     return tf.div(tf.subtract(x, mean), tf.sqrt(tf.add(var, epsilon)))
 ```
-
+結合上述方式定義deconv
 ```python
 with tf.variable_scope('deconv1'):
         deconv1 = relu(instance_norm(resize_conv2d(res5, 128, 64, 3, 2, training)))
@@ -60,6 +61,14 @@ with tf.variable_scope('deconv1'):
     with tf.variable_scope('deconv3'):
         deconv3 = tf.nn.tanh(instance_norm(conv2d(deconv2, 32, 3, 9, 1)))
 ```
-
-
+- 整個架構中有影像生成網路(Image Tranform Net)與損失網路(Loss Network)，而目標是訓練影像生成網絡，因此只需訓練與儲存影像生成網路的變數
+```python
+variable_to_train = []  
+# 使用tf.trainable_variables()找出所有可以訓練的變數
+for variable in tf.trainable_variables(): 
+    # 如果不在損失網路中，把他們加入列表variables_to_train
+    if not(variable.name.startswith(FLAGS.loss_model)):  
+        variable_to_train.append(variable)  
+train_op = tf.train.AdamOptimizer(1e-3).minimize(loss, global_step=global_step, var_list=variable_to_train)  
+```
 

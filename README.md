@@ -10,18 +10,18 @@
 - **訓練階段** : 利用Loss Network來定義內容損失(Content Loss)與風格損失(Style Loss)，目標是讓影像生成網路(Image Tranform Net)輸入一張風格圖片後經由訓練能夠有效生成圖片
 - **執行階段** : 輸入一張圖片，經由影像生成網路(Image Tranform Net)生成出一張風格轉移過後的圖片
 
-# Detail
+# Detail　
 與原始的Style Transfer的概念相同，利用損失網路(Loss Network)來定義內容損失(Content Loss)與風格損失(Style Loss)
 
 
 
-- 內容損失(Content Loss)
+- 內容損失(Content Loss)</br>
 內容損失(Content Loss)使用VGG-16的relu3_3層輸出的特徵
 ![Content_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Content_loss.png)
 
 
 
-- 風格損失(Style Loss)
+- 風格損失(Style Loss)</br>
 風格損失(Style Loss)則使用VGG-16的relu1_2，relu2-2，relu3_3，relu4_3共四個層的特徵
 ![Style_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Style_Loss.png)
 # Tricks

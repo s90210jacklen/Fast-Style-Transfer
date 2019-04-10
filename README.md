@@ -90,3 +90,6 @@ eg: With Tensorflow as backend
 * Style Image - 梵谷作品《星夜》</br>
 ![Style Image](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/denoised_starry.jpg)
 
+* Generated
+![Generated](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/res.jpg)
+

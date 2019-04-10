@@ -77,7 +77,7 @@ train_op = tf.train.AdamOptimizer(1e-3).minimize(loss, global_step=global_step, 
 **On Windows**
 ```bash
 eg: With Tensorflow as backend
-> python eval.py --model_file folder_name/denoised_starry.ckpt-done --image_file img/ponbao.jpg 
+> python eval.py --model_file folder_name/denoised_starry.ckpt-done --image_file img/Corgi.jpg 
 ```
 folder_name : 指定一個存放模型檔案的資料夾名稱，將預訓練的模型檔案(此為denoised_starry.ckpt-done)放到此資料夾內</br>
 img : 指定一個存放圖片的資料夾名稱，將圖片放到此資料夾內</br>

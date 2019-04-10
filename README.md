@@ -17,13 +17,13 @@
 
 - **內容損失(Content Loss)**</br>
 內容損失(Content Loss)使用VGG-16的relu3_3層輸出的特徵
-![Content_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Content_loss.png)
+
 
 
 
 - **風格損失(Style Loss)**</br>
 風格損失(Style Loss)則使用VGG-16的relu1_2，relu2-2，relu3_3，relu4_3共四個層的特徵
-![Style_loss](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Style_Loss.png)
+
 # Tricks
 
 

@@ -1,5 +1,5 @@
 # Fast Style Transfer 快速風格轉移 (Using Tensorflow)
-由《Perceptual Losses for Real-Time Style Transfer and Super-Resolution》[1] 所提出，基於原始的Style Transfer利用預訓練好的VGGNet之外，需要再訓練一個影像產生網路(Image Tranform Net)，當訓練完成後，將圖片放入Image Tranform Net後只需計算一遍就能快速輸出具有風格的圖片
+由《Perceptual Losses for Real-Time Style Transfer and Super-Resolution》[1] 所提出，基於原始的Style Transfer[2]利用預訓練好的VGGNet之外，需要再訓練一個影像產生網路(Image Tranform Net)，當訓練完成後，將圖片放入Image Tranform Net後只需計算一遍就能快速輸出具有風格的圖片
 
 
 # Concept
@@ -95,4 +95,6 @@ eg: With Tensorflow as backend
 
 # Reference
 - [1] [《Perceptual Losses for Real-Time Style Transfer and Super-Resolution》](https://arxiv.org/pdf/1603.08155v1.pdf)
+- [2][《A Neural Algorithm of Artistic Style》
+](https://arxiv.org/pdf/1508.06576v2.pdf)
 

@@ -30,12 +30,34 @@
 - 不採取常見的轉置卷積(Transposed Convolution)的方式，而是先放大再做卷積，這樣可以消除棋盤狀的noise</br>
 由[此篇文章](https://distill.pub/2016/deconv-checkerboard/)所提出
 ```python
+def resize_conv2d(x, input_depth, output_depth, ksize, strides, traning):
+    # 先放大
+    with tf.variable_scope('conv_transpose'):
+        height = x.get_shape()[1].value
+        width = x.get_shape()[2].value
+        
+        new_height = height * strides * 2
+        new_width = width * strides * 2
+        
+        x_resized = tf.image.resize_images(x, [new_height, new_width], tf.image.ResizeMethod.NEAREST_NEIGHBOR)
+     # 再卷積   
+        return conv2d(x_resized, input_depth, output_depth, ksize, strides)
+```
+-使用Instance Norm取代常見的Batch Norm 由[《Instance Normalization: The Missing Ingredient for Fast Stylization》](https://arxiv.org/abs/1607.08022)所提出
+```python
+def instance_norm(x):
+    epsilon = 1e-9
+    mean, var = tf.nn.moments(x, [1, 2], keep_dims=True)
+    
+    return tf.div(tf.subtract(x, mean), tf.sqrt(tf.add(var, epsilon)))
+```
+
+```python
 with tf.variable_scope('deconv1'):
         deconv1 = relu(instance_norm(resize_conv2d(res5, 128, 64, 3, 2, training)))
     with tf.variable_scope('deconv2'):
         deconv2 = relu(instance_norm(resize_conv2d(deconv1, 64, 32, 3, 2, training)))
     with tf.variable_scope('deconv3'):
-        # 到這裡生成的圖片大小已經和原圖相同，所以不再進行反卷積
         deconv3 = tf.nn.tanh(instance_norm(conv2d(deconv2, 32, 3, 9, 1)))
 ```
 

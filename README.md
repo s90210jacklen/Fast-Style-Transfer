@@ -81,7 +81,12 @@ eg: With Tensorflow as backend
 ```
 **folder_name** : 指定一個存放模型檔案的資料夾名稱，將預訓練的模型檔案(此為denoised_starry.ckpt-done)放到此資料夾內</br>
 **images** : 指定一個存放圖片的資料夾名稱，將圖片放到此資料夾內</br>
-**denoised_starry.ckpt-done** : 以梵谷的星空作為風格影像的預訓練模型檔</br>
+**denoised_starry.ckpt-done** : 以梵谷的《星夜》作為風格影像的預訓練模型檔</br>
 
-* Origin
+* Original Image
+![Original Image](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Corgi.jpg)
+
+
+* Style Image (梵谷作品《星夜》)
+![Style Image](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/denoised_starry.jpg)
 

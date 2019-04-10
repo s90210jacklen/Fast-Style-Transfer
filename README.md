@@ -83,5 +83,5 @@ eg: With Tensorflow as backend
 **images** : 指定一個存放圖片的資料夾名稱，將圖片放到此資料夾內</br>
 **denoised_starry.ckpt-done** : 以梵谷的星空作為風格影像的預訓練模型檔</br>
 
-   # Origin
+* Origin
 

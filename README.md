@@ -84,14 +84,14 @@ eg: With Tensorflow as backend
 **denoised_starry.ckpt-done** : 以梵谷的《星夜》作為風格影像的預訓練模型檔</br>
 
 # Result
-* Original Image</br>
+* Original Image</br></br>
 ![Original Image](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/Corgi.jpg)
 
 
-* Style Image - 梵谷作品《星夜》</br>
+* Style Image - 梵谷作品《星夜》</br></br>
 ![Style Image](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/denoised_starry.jpg)
 
-* Generated </br>
+* Generated </br></br>
 ![Generated](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/res.jpg)
 
 # Reference

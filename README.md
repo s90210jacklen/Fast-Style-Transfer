@@ -94,7 +94,7 @@ eg: With Tensorflow as backend
 * Generated </br></br>
 ![Generated](https://github.com/s90210jacklen/Fast-Style-Transfer/blob/master/images/res.jpg)
 
-# Reference
+# References
 - [1] [《Perceptual Losses for Real-Time Style Transfer and Super-Resolution》](https://arxiv.org/pdf/1603.08155v1.pdf)
 - [2] [《A Neural Algorithm of Artistic Style》
 ](https://arxiv.org/pdf/1508.06576v2.pdf)
